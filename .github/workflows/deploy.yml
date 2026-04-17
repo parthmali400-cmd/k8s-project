@@ -1,0 +1,26 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.parth0364 }}
+        password: ${{ secrets.Mali@1234 }}
+
+    - name: Build Image
+      run: docker build -t ${{ secrets.parth0364 }}/myapp .
+
+    - name: Push Image
+      run: docker push ${{ secrets.parth0364 }}/myapp
