@@ -1,28 +1,28 @@
-# 🚀 DevOps Project: Docker + Kubernetes + CI/CD
+#  DevOps Project: Docker + Kubernetes + CI/CD
 
-## 📌 Overview
+##  Overview
 This project demonstrates a complete DevOps workflow including containerization, Kubernetes deployment, and CI/CD automation.
 
-## ⚙️ Tech Stack
+##  Tech Stack
 - Python (Flask)
 - Docker
 - Kubernetes
 - GitHub Actions
 
-## 🔥 Features
+##  Features
 - Containerized web application
 - Kubernetes deployment with multiple replicas
 - Liveness health check (`/health`)
 - CI/CD pipeline using GitHub Actions
 - Docker Hub integration
 
-## 🌐 Endpoints
+##  Endpoints
 - `/` → Main app
 - `/health` → Health check
 - `/env` → Environment variables
 - `/api/data` → POST API
 
-## 🚀 How to Run
+##  How to Run
 
 ```bash
 docker build -t myapp .
